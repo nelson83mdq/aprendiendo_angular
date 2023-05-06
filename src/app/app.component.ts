@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aprendiendo_angular';
+  mostrarListado: boolean;
+  constructor(){
+    this.mostrarListado = true;
+  }
+
+  cambiarVisibilidad(){
+    this.mostrarListado = !this.mostrarListado;
+    console.log('evento');
+  }
 }

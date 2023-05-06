@@ -1,0 +1,15 @@
+<p>video-juegos</p>
+<input  type="text" 
+        (keyup.enter)="something()" 
+        [(ngModel)]="value"/>
+        <strong>{{value}}  </strong>
+<ul>
+    <li *ngFor="let item of videoJuegosList; let indice = index">
+        {{item.name}}, 
+        <a href="./www.google.com?'{{item.company}}">{{item.company}}</a> 
+        <strong [class.year1990]="item.yearRelease > 1989" [class.year1980]="item.yearRelease <= 1989">
+            {{item.yearRelease}}
+        </strong>
+        <button (click)="deleteRow(indice)">Eliminar</button>
+    </li>
+</ul>
