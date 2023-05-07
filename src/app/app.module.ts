@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VideoJuegosComponent } from './video-juegos/video-juegos.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VideoJuegosComponent
+    VideoJuegosComponent,
+    HomeComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
