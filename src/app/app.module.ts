@@ -7,13 +7,15 @@ import { VideoJuegosComponent } from './video-juegos/video-juegos.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LibraryComponent } from './library/library.component';
+import { OopsErrorComponent } from './oops-error/oops-error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideoJuegosComponent,
     HomeComponent,
-    LibraryComponent
+    LibraryComponent,
+    OopsErrorComponent
   ],
   imports: [
     BrowserModule,
