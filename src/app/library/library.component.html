@@ -1,1 +1,9 @@
-<p>library works!</p>
+<h2>list of recommended books:</h2>
+<ul>
+    <li *ngFor="let book of bookList">
+        <article [class.articleSuccess]="book.review >=200">
+            {{book.name}} de {{book.author}}, publicado en {{book.published.getFullYear()}} por la editorial 
+            {{book.editorial}}, con un total de {{book.review}} revisiones de parte de nuestros lectores.
+            </article><br/>
+    </li>
+</ul>
