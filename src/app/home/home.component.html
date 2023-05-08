@@ -1,1 +1,8 @@
-<p [class.hotspot]="true">home works!</p>
+<h2 *ngIf="login; else notLogin">
+    Aun no esta Logueado!!!
+    <button (click)="Log()">Sign in..</button>
+</h2>
+
+<ng-template #notLogin>
+    <p>Ahora esta logueado!!!</p>
+</ng-template>

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  public login: boolean;
+  constructor(){
+      this.login = true;
+  }
+    Log(){
+      this.login = !this.login;
+    }
 }

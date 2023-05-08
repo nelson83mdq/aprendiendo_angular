@@ -8,7 +8,7 @@ import { OopsErrorComponent } from './oops-error/oops-error.component';
 
 const routes: Routes = [  
   {path: 'videojuegos', component: VideoJuegosComponent},
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'library', component: LibraryComponent},
   {path: 'library/:someBook', component: LibraryComponent},
   {path: '**', component: OopsErrorComponent},
