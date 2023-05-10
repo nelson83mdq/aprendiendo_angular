@@ -19,8 +19,8 @@ export class VideoJuegosComponent {
     ]
   }
 
-  deleteRow(indice: number){
-    this.videoJuegosList.splice(indice,1);
+  deleteRow(i_randomParam: number){
+    this.videoJuegosList.splice(i_randomParam,1);
   }
 
   something(): void{

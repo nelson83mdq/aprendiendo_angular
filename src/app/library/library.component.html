@@ -7,3 +7,8 @@
             </article><br/>
     </li>
 </ul>
+<input type="text" [(ngModel)]="archivo"/>
+<button (click)="showPicture(archivo)">Show Picture</button>
+<div>
+<img *ngIf='show' [src]="urlButton" width="200"/>
+</div>
