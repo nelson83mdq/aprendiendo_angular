@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LibraryComponent } from './library/library.component';
 import { OopsErrorComponent } from './oops-error/oops-error.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { OopsErrorComponent } from './oops-error/oops-error.component';
     VideoJuegosComponent,
     HomeComponent,
     LibraryComponent,
-    OopsErrorComponent
+    OopsErrorComponent,
+    FormContactComponent
   ],
   imports: [
     BrowserModule,
